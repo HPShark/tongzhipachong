@@ -1,0 +1,32 @@
+{
+	// 是否启用打卡完毕后发送邮件提醒 开启：1       关闭：0（默认）
+    "flag" : 1,
+
+	// 发送邮箱    只支持QQ邮箱
+    "from_email" : "123456789@qq.com",
+
+    // 接受邮箱
+    "to_email" : "123456789@qq.com",
+
+    // QQ邮箱授权码
+    "key" : "abcdefghijklmn",
+
+    // 邮件标题
+    "biaoti" : "爬取结果",
+
+    // 要监控的url以及对应的提取标题的正则表达式
+    "productList" : [
+    	// 第一个
+    	{
+    		// 要爬页面的链接
+    		"url" : "https://sast.xidian.edu.cn/index/tzgg.htm",
+    		// 页面正则的base64编码
+    		"reg" : "PEEgaHJlZj0iXC5cLi8oLio/KSI+W1xzXFNdKj88UD4oLio/KTwvUD48U1BBTj4oLio/KTwvU1BBTj4=",
+    		// 头部，可为空。如header为https://sast.xidian.edu.cn/，则匹配到结果将加在header后。Ex：https://sast.xidian.edu.cn/info/1014/2673.htm
+    		"header" : "https://sast.xidian.edu.cn/"
+    	}
+
+    	//第二个，可以依次往下配置
+
+    ]
+}
